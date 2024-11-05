@@ -1,5 +1,4 @@
 <?php
-// arbolesAmigo.php - Lista de árboles de un amigo específico
 session_start();
 require_once '../../utils/functions.php';
 checkAuth();
@@ -18,8 +17,8 @@ if (!$amigo) {
     exit();
 }
 
-// Obtener árboles del amigo
 $arboles = getTreesByFriend($amigo_id);
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

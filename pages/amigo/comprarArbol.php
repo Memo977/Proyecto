@@ -209,7 +209,7 @@ if (!$tree || $tree['estado'] !== 'Disponible') {
                                     </li>
                                     <li class="mb-2">
                                         <strong>Precio:</strong><br>
-                                        €<?php echo number_format($tree['precio'], 2); ?>
+                                        ₡ <?php echo number_format($tree['precio'], 2); ?>
                                     </li>
                                 </ul>
                             </div>

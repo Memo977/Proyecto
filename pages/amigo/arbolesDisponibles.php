@@ -267,7 +267,7 @@ $trees = getAllTrees();
                         </p>
                         <p class="card-text">
                             <strong>Precio: </strong>
-                            €<?php echo number_format($tree['precio'], 2); ?>
+                            ₡<?php echo number_format($tree['precio'], 2); ?>
                         </p>
                     </div>
                     <div class="card-footer border-top-0">

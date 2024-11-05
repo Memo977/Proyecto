@@ -267,7 +267,7 @@ $species = getAllSpecies();
                                         <?php echo htmlspecialchars($tree['estado']); ?>
                                     </span>
                                 </td>
-                                <td>₡<?php echo number_format($tree['precio'], 2); ?></td>
+                                <td>₡ <?php echo number_format($tree['precio'], 2); ?></td>
                                 <td>
                                     <?php if (!empty($tree['foto_url'])): ?>
                                     <img src="../../uploads/arboles/<?php echo htmlspecialchars($tree['foto_url']); ?>"

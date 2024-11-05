@@ -154,7 +154,6 @@ function deleteTree($id) {
     $conn = getConnection();
     $id = mysqli_real_escape_string($conn, $id);
     
-    // First, check if the tree exists and get its photo URL
     $query = "SELECT foto_url FROM arboles WHERE id = $id";
     $result = mysqli_query($conn, $query);
     $tree = mysqli_fetch_assoc($result);
