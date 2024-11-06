@@ -9,7 +9,7 @@ if ($_SESSION['rol_id'] != 2) {
 }
 
 if (!isset($_GET['id'])) {
-    header('Location: arboles_disponibles.php');
+    header('Location: arbolesDisponibles.php');
     exit();
 }
 
@@ -17,7 +17,7 @@ $tree = getTree($_GET['id']);
 
 if (!$tree || $tree['estado'] !== 'Disponible') {
     $_SESSION['error_message'] = "El árbol no está disponible para su compra.";
-    header('Location: arboles_disponibles.php');
+    header('Location: arbolesDisponibles.php');
     exit();
 }
 ?>
